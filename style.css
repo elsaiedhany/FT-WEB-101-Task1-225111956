@@ -1,0 +1,247 @@
+/* Main colors used on the page */
+:root {
+    --background-color: #f4f7fb;
+    --text-color: #202938;
+    --card-color: #ffffff;
+    --main-color: #2563eb;
+    --secondary-color: #64748b;
+    --border-color: #dce3ed;
+}
+
+/* Apply the same box size rule to all elements */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.page-header,
+main,
+footer {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-header {
+    padding-top: 28px;
+}
+
+h1 {
+    margin: 0 0 18px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.brand {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding: 55px 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.small-title {
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about-text h2 {
+    margin: 5px 0 10px;
+    font-size: 32px;
+}
+
+.about-section img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--card-color);
+}
+
+.skills-section,
+.contact-section {
+    padding: 25px 0;
+}
+
+.skills-section h2,
+.contact-section h2 {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 22px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--main-color);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--main-color);
+}
+
+.contact-section > p {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto 0;
+    padding: 22px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid var(--main-color);
+    border-color: transparent;
+}
+
+.theme-control {
+    padding: 15px 0 35px;
+    text-align: center;
+}
+
+button {
+    padding: 11px 20px;
+    color: #ffffff;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    padding: 18px 0;
+    border-top: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Dark mode changes the page colors through CSS */
+body.dark {
+    --background-color: #111827;
+    --text-color: #e5e7eb;
+    --card-color: #1f2937;
+    --main-color: #60a5fa;
+    --secondary-color: #aab6c8;
+    --border-color: #374151;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .about-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
