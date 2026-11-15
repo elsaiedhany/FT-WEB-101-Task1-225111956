@@ -1,0 +1,82 @@
+<!-- Name: AlSaeed Hany AlSaeed Tawfik | ID: 225111956 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlSaeed Hany - Profile Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="top-header">
+            <h1>AlSaeed Hany AlSaeed</h1>
+            <button id="themeToggleBtn" type="button">Toggle Dark Mode</button>
+        </div>
+
+        <nav class="nav-bar">
+            <span class="nav-brand">AlSaeed Hany</span>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#cards">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- About / Profile Photo Section -->
+        <section id="about" class="profile-section">
+            <img src="images/me.jpg" alt="Photo of AlSaeed Hany" class="profile-photo">
+            <h2>Computer Science &amp; Engineering Student</h2>
+            <p>Welcome to my profile page! I am a passionate student at New Mansoura University interested in software development, cybersecurity, and algorithms.</p>
+        </section>
+
+        <!-- Cards Section (3 cards in a row using Flexbox) -->
+        <section id="cards" class="cards-section">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Learning modern web technologies including semantic HTML5, modern CSS layouts (Flexbox &amp; Grid), and vanilla JavaScript to build interactive user experiences.</p>
+            </div>
+            <div class="card">
+                <h3>Cybersecurity</h3>
+                <p>Exploring fundamental security concepts, vulnerability analysis, network defense strategies, and safe application programming practices.</p>
+            </div>
+            <div class="card">
+                <h3>Problem Solving</h3>
+                <p>Practicing data structures and core algorithm design to solve computational problems efficiently and optimize time and space complexity.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="form-section">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="userName">Your Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="userEmail">Your Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email address" required>
+                </div>
+
+                <button type="submit" id="submitBtn">Send Message</button>
+                <p id="formMsg" class="form-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 AlSaeed Hany. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript linked at the end of body -->
+    <script src="js/script.js"></script>
+</body>
+</html>
